@@ -1,0 +1,31 @@
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+int main() {
+    // Complete the code.
+    // https://www.hackerrank.com/challenges/c-tutorial-for-loop/problem?isFullScreen=true
+    
+    int a, b ;
+    cin >> a;
+    cin >> b;
+    string counting[9] = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
+    
+    for (int i = a; i <= b; i++){
+        if(i<=9){
+            cout << counting[i-1];
+           
+            cout << endl;
+        }
+        else{
+           if(i%2==0){
+               cout << "even";
+               cout<< endl;
+           } 
+           else{
+               cout << "odd";
+               cout<< endl;
+           }
+        }
+    }
+}
